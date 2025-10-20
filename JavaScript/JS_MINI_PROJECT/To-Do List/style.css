@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskAdder{
+    margin: 2rem 0;
+}
+
+input{
+    border: 2px solid gray;
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+}
+#addTask{
+    margin-left:0.6rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid blue;
+    color: black;
+
+}
+#addTask:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2);
+    transition: all 0.1s linear;
+}
+
+.taskWindow{
+    background-color: burlywood;
+    padding: 1rem 2rem;
+    width: 30rem;
+    height: 25rem;
+    overflow: scroll;
+    border-radius: 1.2rem;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ul li{
+    margin: 0.8rem 0.2rem;
+    width: 99%;
+}
+.taskDiv{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.taskDiv p{
+    padding: 0.4rem;
+    font-weight: 700;
+}
+
+.delete{
+    margin-right: 0.2rem;
+    /* margin-left: 5rem; */
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    padding: 0.4rem; 
+}
+.delete:hover{
+    background-color: white;
+    color: red;
+    transform: scale(1.2);
+    transition: all 0.1s linear;
+}
+
+@media (max-width:540px){
+    .taskWindow{
+        width: 80%;
+
+    }
+}
