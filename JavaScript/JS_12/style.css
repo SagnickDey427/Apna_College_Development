@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+.display{
+    width: 25rem;
+    height: 18rem;
+    border:2px solid #957C62;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: #B77466;
+    overflow: auto;
+}
+.display ul{
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+.display ul li{
+    display: flex;
+    justify-content: space-around;
+}
+.name{
+    padding:0.5rem 1rem;
+    border-radius: 0.5rem;
+    border:2px solid #957C62;
+    background-color: #FFE1AF;
+}
+.year{
+    padding:0.5rem 1rem;
+    border-radius: 0.5rem;
+    border:2px solid #957C62;
+    background-color: #E2B59A;
+}
+
+.showAnimals{
+    margin-top: 2rem;
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #957C62;
+}
+.showAnimals:hover{
+    cursor: pointer;
+    background-color: #D9A679;
+
+}
+.reset{
+    margin-top: 1rem;
+    border-radius: 0.7rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    
+    background-color: #957C62;
+}
+.reset:hover{
+    cursor: pointer;
+    background-color: #D9A679;
+
+}
