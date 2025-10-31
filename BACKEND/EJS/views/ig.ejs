@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href= "/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="igPage-container">
+        <header>
+            <h2>This page belongs to : @<%= data.name %></h2>
+        </header>
+        <div class="follow-chat-buttons">
+            <button class="follow">Follow</button>
+            <button class="messege">Messege</button>
+        </div>
+        <div class="info-section">
+            <p><strong>Followers:</strong> <%= data.followers %></p>
+            <p><strong>Following:</strong> <%= data.following %></p>
+        </div>
+        <div class="posts-section">
+            <%for(post of data.posts){%>
+            <div class="post">
+                <img src="<%= post.image%>" alt="A pic">
+                <div class="post-info">
+                    <p id="likes">Likes :<%= post.likes%></p>
+                    <p id="comments">Comments : <%= post.comments%></p>
+                </div>
+            </div>
+            <%}%>
+        </div>
+    </div>
+    <%- include("includes/footer.ejs")%>
+
+    <script src="/script.js"></script>
+</body>
+</html>
