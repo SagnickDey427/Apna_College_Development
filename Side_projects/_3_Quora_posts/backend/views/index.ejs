@@ -14,13 +14,22 @@
         <div class="post-container">
             <%for(post of posts){%>
                 <div class="post">
+                    <p class="post-username" id="post-id">Id:<%=post.id%></p>
                     <p class="post-username">@<%=post.username%></p>
                     <div class="post-content">
                         <p><%=post.content%></p>
+                    </div>
+                    <div class="post-options">
+                        <a href="http://localhost:3000/posts/<%=post.id%>"><button class="see-post">See Post</button></a>
+                        <a href="http://localhost:3000/posts/<%=post.id%>/edit"><button class="edit-post">Edit Post</button></a>
+                        <form action="/posts/<%=post.id%>?_method=DELETE" method="post"><button>Delete Post</button></form>
                     </div>
                 </div>
             <%}%>
         </div>
     </main>
+    <aside>
+        <a href="http://localhost:3000/posts/new"><button>Create new post</button></a>
+    </aside>
 </body>
 </html>

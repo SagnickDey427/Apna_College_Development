@@ -16,3 +16,11 @@
 
 ☕Errors/Bugs Faced :- 
 ->Make sure to include "app.set('view engine','ejs');" into your code . I did everything but this , hence faced a dumb error.
+
+
+🛰️ New things learned :-
+-> array.find() function in JS , docs : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+
+-> Redirection using res.redirect() function 
+-> Sending patch request via a form using 'method-override' package
+-> Deleting a post by clicking a button :- This button is wrapped inside a <form> element so when we click on it , the sends a delete request to the 'posts/:id' route with the help of 'method-override' to delete the post.

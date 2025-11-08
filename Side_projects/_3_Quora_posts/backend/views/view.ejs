@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See post </title>
+    <link rel="stylesheet" href="IndexStyle.css">
+</head>
+<body>
+    <header>
+        <h4>Seeing post of <%= post.username%></h4>
+    </header>
+    <main>
+        <div class="post-content">
+            <p><%= post.content%></p>
+        </div>
+        <a href="http://localhost:3000/posts"><button class="backBtn">Back</button></a>
+    </main>
+</body>
+</html>
