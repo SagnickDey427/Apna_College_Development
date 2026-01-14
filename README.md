@@ -24,3 +24,17 @@
 -> Redirection using res.redirect() function 
 -> Sending patch request via a form using 'method-override' package
 -> Deleting a post by clicking a button :- This button is wrapped inside a <form> element so when we click on it , the sends a delete request to the 'posts/:id' route with the help of 'method-override' to delete the post.
+
+
+### 4. Whatsapp Chats
+
+🛰️ Navigation : 
+
+-> models folder -- keeps all the models in one place
+-> init.js -- Used to initialize the database with some sample data , run only once at the beginning of the project.
+
+🗺️ Routing : 
+
+-> index route -- '/chats' to show all chats 
+-> create route -- '/chats/new' to get the form and then post request on '/chats'
+-> edit route -- '/chats/:id/edit' to get the edit page and then patch request on '/chats'

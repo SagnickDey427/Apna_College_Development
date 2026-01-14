@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Lite</title>
+    <link rel="stylesheet" href="/indexStyle.css">
+</head>
+<body>
+    <header>
+        <h2>All chats </h2>
+    </header>
+    <main>
+        <div class="createBtn">
+
+            <form action="http://localhost:8080/chats/new" method="get"><button class="newPost">New Chat</button></form>
+        </div>
+        <div class="container">
+            <%for(let chat of chats) {%>
+                <div class="chatBox">
+                    <div class="content">
+                        <p id="from">From : <%=chat.from%></p>
+                        <p id="msg"><%=chat.message%></p>
+                        <p id="to">To : <%=chat.to%></p>
+                        <p id="date-time"><%=chat.created_at.toString().split(" ")[4]%></p>
+                        <p id="date-time"><%=chat.created_at.toString().split(" ").slice(0,4).join("-")%></p>
+                    </div>
+                    <div class="controls">
+                        <form action="http://localhost:8080/chats/<%=chat._id%>/edit" method="get">
+
+                            <button id="edit-chat" class="newPost">Edit Chat</button>
+                        </form>
+                        <form action="http://localhost:8080/chats/<%=chat._id%>?_method=DELETE" method="post">
+                            <button id="delete-chat" class="deletePost">Delete Chat</button>
+                        </form>
+                    </div>
+                </div>
+            <%}%>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.design-btn{
+    background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+    margin-bottom: 1rem;
+}
+.show-winner{
+    margin-top: 1rem;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color:#242424;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Chat Form</title>
+    <link rel="stylesheet" href="/formStyle.css">
+</head>
+<body>
+    <main>
+        <form action="http://localhost:8080/chats" method="post">
+            <span id="from-tag" class="margin">From :</span>
+            <input type="text" placeholder="Enter your name" name="from" class="margin"> <br>
+            <span id="msg-tag" class="margin">Your Message :</span>
+            <textarea name="message" id="message" placeholder="Enter your message here" class="margin"></textarea> <br>
+            <span id="to-tag" class="margin">To : </span>
+            <input type="text" name="to" id="to" class="margin" placeholder="Receiver name"> <br>
+            <button id="submit" class="margin">Send Chat</button>
+        </form>
+    </main>
+</body>
+</html>

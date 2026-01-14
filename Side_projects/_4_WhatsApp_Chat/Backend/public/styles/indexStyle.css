@@ -1,0 +1,121 @@
+:root{
+    --bg-color:#37353E;
+    --h2-color:#D3DAD9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    
+    /* background-color: #9BB4C0; */
+    background-color: var(--bg-color);
+}
+
+h2{
+    text-align: center;
+    color: var(--h2-color);
+    margin: 0.3rem 0;
+    font-size: 2rem;
+}
+
+.createBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.newPost{
+    margin: 0.5rem 0;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: #896C6C;
+    color: #0C2B4E;
+    font-weight: 600;
+    transition: all 0.15s linear;
+    box-shadow: 2px 1px 4px 1px black;
+}
+.newPost:hover{
+    background-color: #FF714B;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: baseline; */
+    justify-content: flex-start;
+    align-content: baseline;
+    width:98vw;
+    height:auto;
+    margin: auto;
+    padding: 1rem 0;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    background-color: var(--bg-color);
+    /* background-color: #9BB4C0; */
+    flex-wrap: wrap;
+    border: none;
+    
+}
+
+.chatBox{
+    width:22.5%;
+    height: auto;
+    padding:1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: #8CA9FF; */
+    background-color: #fff;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#from, #to ,#date-time{
+    font-weight: 700;
+    font-style: italic;
+    padding: 0.5rem 0;
+    text-decoration: underline;
+}
+
+#msg{
+    padding: 0.3rem 0.8rem 0.3rem 0.1rem;
+    background-color: var(--h2-color);
+    border-radius: 0.5rem;
+    text-align: center;
+
+}
+
+#edit-chat:hover{
+    background-color: #658C58;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+.deletePost{
+    margin: 0.5rem 0;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: #896C6C;
+    color: #0C2B4E;
+    font-weight: 600;
+    transition: all 0.15s linear;
+    box-shadow: 2px 1px 4px 1px black;
+}
+.deletePost:hover{
+    background-color: #A72703;
+    color: #fff;
+    transform: scale(1.1);
+}

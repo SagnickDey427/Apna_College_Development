@@ -1,0 +1,20 @@
+/*List items*/
+.task-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    padding: 0.3rem 0.7rem;
+}
+.task-item li{
+    margin: 0 1rem;
+}
+#edit-btn{
+    background-color: green;
+    margin: 0 0.6rem;
+}
+#delete-btn{
+    background-color: red;
+}

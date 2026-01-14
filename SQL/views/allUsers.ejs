@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Username</th>
+            </tr>
+            <%for(user of users){%>
+            <tr>
+                <td><%=user.id%></td>
+                <td><%=user.email%></td>
+                <td><%=user.username%></td>
+                <td><form action="http://localhost:8080/users/<%=user.id%>/edit" method="get"><button>Edit Username</button></form></td>
+                <td><form action="http://localhost:8080/users/<%=user.id%>?_method=DELETE" method="post">
+                    <button>Delete User</button>
+                </form></td>
+            </tr>
+            <%}%>
+        </table>
+        <form action="http://localhost:8080/users/new" method="get"><button>Add New Record</button></form>
+    </main>
+</body>
+</html>

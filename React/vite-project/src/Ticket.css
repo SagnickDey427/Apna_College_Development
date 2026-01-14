@@ -1,0 +1,12 @@
+.ticket-container{
+    margin: auto;
+    max-width: 300px;
+    padding: 0.3rem 0;
+    border-radius: 0.8rem;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.ticket-container p{
+    font-size: 0.8rem;
+}

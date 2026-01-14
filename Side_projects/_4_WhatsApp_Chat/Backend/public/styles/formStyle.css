@@ -1,0 +1,48 @@
+form{
+    width: 60%;
+    height: 60%;
+    background-color: #0046FF;
+    color: #fff;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0.5rem;
+}
+
+#submit{
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    background-color: #B7E5CD;
+    color: #000;
+    margin: auto;
+    transition: all 0.15s linear;
+
+}
+#submit:hover{
+    transform: scale(1.1);
+    background-color: #000;
+    color: #B7E5CD;
+}
+
+.margin{
+    margin:0.5rem 0.3rem;
+}
+span{
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#message{
+    width: 18rem;
+    height: 14rem;
+    border-radius: 0.2rem;
+
+}
+
+input{
+    width: 20rem;
+    height: 2rem;
+}
+
+
